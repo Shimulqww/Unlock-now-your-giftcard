@@ -221,7 +221,7 @@
         btn.innerHTML = originalText;
         btn.disabled = false;
         openVerifyPopup();
-      }, 2000); // 2 sec loading
+      }, 2000); // 10 sec loading
     }
 
     // Open popup + show loading before locker
@@ -230,7 +230,7 @@
       let box = document.getElementById("verify-box");
       box.innerHTML = '<div class="loading" style="margin:20px auto;"></div><p class="popup-type">✅ Complete Verify to get Free Gift Card</p>';
 
-      // After 3 sec load locker
+      // After 10 sec load locker
       setTimeout(() => {
         box.innerHTML = "";
         var s = document.createElement("script");
